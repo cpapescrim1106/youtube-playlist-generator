@@ -1,0 +1,44 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+.env
+credentials.json
+token.pickle
+data/
+*.db
+tests/
+DEVELOPMENT_PLAN.md
+README.md
+deploy.sh
+captain-definition
+docker-compose.yml
+nginx.conf
+
+# Temporary files
+*.log
+*.tmp
+*~

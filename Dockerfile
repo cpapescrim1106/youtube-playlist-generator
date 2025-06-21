@@ -18,8 +18,6 @@ COPY frontend/ ./frontend/
 
 # Copy other necessary files
 COPY .env.example .env.example
-COPY setup_oauth.py .
-COPY test_playlist.py .
 
 # Create directory for database
 RUN mkdir -p /app/data
