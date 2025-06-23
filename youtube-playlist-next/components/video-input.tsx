@@ -21,7 +21,7 @@ export function VideoInput({
   const [bulkInput, setBulkInput] = useState("")
 
   const removeUrl = useCallback((index: number) => {
-    onUrlsChange(urls.filter((_, i) => i \!== index))
+    onUrlsChange(urls.filter((_, i) => i !== index))
   }, [urls, onUrlsChange])
 
   const handleBulkAdd = () => {
@@ -38,7 +38,7 @@ export function VideoInput({
   }
 
   const getVideoValidation = (url: string) => {
-    if (\!validationResults?.videos) return null
+    if (!validationResults?.videos) return null
     return validationResults.videos.find((v: any) => 
       url.includes(v.videoId)
     )
@@ -67,14 +67,14 @@ export function VideoInput({
               setBulkInput("")
               onUrlsChange([])
             }}
-            disabled={urls.length === 0 && \!bulkInput.trim()}
+            disabled={urls.length === 0 && !bulkInput.trim()}
           >
             Clear All
           </Button>
           <Button
             type="button"
             onClick={handleBulkAdd}
-            disabled={\!bulkInput.trim()}
+            disabled={!bulkInput.trim()}
           >
             Add Videos
           </Button>
@@ -111,7 +111,7 @@ export function VideoInput({
                     </div>
                   )}
                 </div>
-                {validating && \!validation && (
+                {validating && !validation && (
                   <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
                 )}
                 <Button
@@ -136,4 +136,3 @@ export function VideoInput({
     </div>
   )
 }
-EOF < /dev/null

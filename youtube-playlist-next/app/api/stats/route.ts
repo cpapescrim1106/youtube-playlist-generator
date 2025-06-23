@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { auth } from '@/lib/auth'
-import { prisma } from '@/lib/prisma'
+// import { auth } from '@/lib/auth'
+// import { prisma } from '@/lib/prisma'
 import { handleError, createErrorResponse } from '@/lib/errors'
 
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   try {
     // For now, return mock data until database is properly set up
     const stats = {
